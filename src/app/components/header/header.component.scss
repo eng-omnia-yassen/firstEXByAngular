@@ -1,0 +1,29 @@
+@use '../../../../public/assets/css/scss/abstracts/' as *;
+header{
+  background-color:#3e3e3e;
+  height: 100vh;
+  position: relative;
+  .content{
+    margin-top:100px ;
+    h1{
+      letter-spacing: 1.5px;
+      font-size: 60px;
+      @include respond(350){
+        font-size: 35px;
+      }
+      @include respond(650){
+        font-size: 45px;
+      }
+    }
+    p{
+      font-size: 30px;
+      @include respond(350){
+        font-size: 20px;
+      }
+      @include respond(650){
+        font-size: 25px;
+      }
+    }
+  }
+
+}

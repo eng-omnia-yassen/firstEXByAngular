@@ -1,0 +1,50 @@
+
+@use '../../../../public/assets/css/scss/abstracts/' as *;
+
+nav{
+  width: 100%;
+  .navbar-brand{
+    width: 8%;
+    @include respond(350){
+      width: 20%;
+    }
+    @include respond(650){
+      width: 15%;
+    }
+    @include respond(850){
+      width: 12%;
+    }
+  }
+  .navbar-toggler{
+    @include respond(350){
+      height: 30px;
+      border-color: #fff;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      row-gap: 4px;
+      span{
+        background-color: #fff;
+        width: 20px;
+        height: 2px;
+      }
+    }
+    @include respond(1050){
+      display: none;
+    }
+
+
+  }
+  .navbar-nav{
+    .nav-link{
+      color: #fff;
+      font-weight: bolder;
+      font-size: 25px;
+    }
+  }
+}
+
+hr{
+    color: #fff;
+    opacity: 1;
+  }

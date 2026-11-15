@@ -1,0 +1,15 @@
+
+@use '../../../../public/assets/css/scss/abstracts/' as *;
+
+.item{
+  @include respond(450){
+    width: 85%;
+    margin: auto;
+  }
+  @include respond(850){
+    width: 100%;
+  }
+  img{
+    border-radius: 20px;
+  }
+}

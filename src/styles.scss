@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.section{
+  display: block;
+  &:nth-child(odd){
+    background-color: #3e3e3e;
+  }
+  &:nth-child(even){
+    background-color: #73281a;
+  }
+}

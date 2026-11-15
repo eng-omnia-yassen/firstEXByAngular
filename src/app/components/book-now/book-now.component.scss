@@ -1,0 +1,26 @@
+@use '../../../../public/assets/css/scss/abstracts/' as *;
+
+section{
+  h2{
+    font-size: 60px;
+  }
+  form{
+    width: 500px;
+    @include respond(350){
+      width: 280px;
+    }
+    @include respond(650){
+      width: 400px;
+    }
+    textarea{
+      resize: none;
+      height: 200px;
+    }
+    button{
+      border: 1px solid #fff;
+      width: 100%;
+      color: #fff;
+      font-size: 20px;
+    }
+  }
+}
