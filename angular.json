@@ -12,7 +12,7 @@
         "@schematics/angular:component": {
           "style": "scss",
           "standalone": false,
-          "skipTests":true,
+          "skipTests": true,
           "type": "component"
         },
         "@schematics/angular:directive": {
@@ -38,9 +38,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
@@ -80,6 +78,9 @@
         },
         "test": {
           "builder": "@angular/build:unit-test"
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
